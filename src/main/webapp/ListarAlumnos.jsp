@@ -21,6 +21,11 @@
 			
 		}
 		
+		#negro{
+			background-color: black !important;
+		}
+		
+		
 		th{
 			background-color: black;
 			color: white;
@@ -48,22 +53,26 @@
 		<h3>LISTA ALUMNOS</h3>
 		<%
 		List<Alumno> listaAlumnos = SingletonArrayAlumnos.getInstance();
-		String tabla = "<table border='1' cellspacing='2' cellpadding='2'>";
-		tabla += "<tr>";
+		String tabla = "<table border='1' cellspacing='2' cellpadding='2' class='table'>";
+		tabla += "<thead>";
+		tabla += "<tr id='negro'>";
 		tabla += "<th>ID</th>";
 		tabla += "<th>NOMBRE</th>";
 		tabla += "<th>APELLIDOS</th>";
 		tabla += "<th>DNI</th>";
 		tabla += "<th>FECHA NACIMIENTO</th>";
 		tabla += "</tr>";
+		tabla += "</thead>";
+		tabla += "<tbody>";
 		for(Alumno al: listaAlumnos){
-			tabla += "<tr><td>"+al.getId()+"</td>";
+			tabla += "<tr><td scope='row'>"+al.getId()+"</td>";
 			tabla += "<td>"+al.getNombre()+"</td>";
 			tabla += "<td>"+al.getApellidos()+"</td>";
 			tabla += "<td>"+al.getDni()+"</td>";
 			tabla += "<td>"+al.getFechaNacimiento()+"</td>";
 			tabla += "</tr>";
 		}
+		tabla += "</tbody>";
 		tabla += "</table>";
 		%>
 		<%=tabla%>	
