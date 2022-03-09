@@ -1,4 +1,4 @@
-package model;
+package com.sinensia.model;
 
 import java.time.LocalDate;
 

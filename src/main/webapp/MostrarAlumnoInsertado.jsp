@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="model.Alumno" %>
-<%@ page import="utilities.SingletonArrayAlumnos" %>
+<%@ page import="com.sinensia.model.Alumno" %>
+<%@ page import="com.sinensia.utilities.SingletonArrayAlumnos" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.time.LocalDate" %>
 <!DOCTYPE html>

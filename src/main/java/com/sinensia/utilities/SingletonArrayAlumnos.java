@@ -1,8 +1,8 @@
-package utilities;
+package com.sinensia.utilities;
 
 import java.util.ArrayList;
 
-import model.Alumno;
+import com.sinensia.model.Alumno;
 
 public class SingletonArrayAlumnos {
 
